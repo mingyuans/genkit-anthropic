@@ -26,7 +26,7 @@ const provider = "anthropic"
 var Multimodal = ai.ModelSupports{
 	Multiturn:  true,
 	Tools:      true,
-	SystemRole: true,
+	SystemRole: false,
 	Media:      true,
 }
 
