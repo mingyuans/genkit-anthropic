@@ -52,11 +52,6 @@ var anthropicModels = map[string]ai.ModelInfo{
 		Supports: &Multimodal,
 		Versions: []string{"claude-3-5-haiku-latest"},
 	},
-	"claude-3-opus": {
-		Label:    "Anthropic Claude 3 Opus",
-		Supports: &Multimodal,
-		Versions: []string{"claude-3-opus@20240229"},
-	},
 	"claude-3-7-sonnet": {
 		Label:    "Anthropic Claude 3.7 Sonnet",
 		Supports: &Multimodal,
