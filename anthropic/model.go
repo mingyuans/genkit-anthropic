@@ -35,22 +35,22 @@ var anthropicModels = map[string]ai.ModelInfo{
 	"claude-3-5-sonnet-v2": {
 		Label:    "Anthropic Claude 3.5 Sonnet v2",
 		Supports: &Multimodal,
-		Versions: []string{"claude-3-5-sonnet-v2@20241022"},
+		Versions: []string{"claude-3-5-sonnet-latest"},
 	},
 	"claude-3-5-sonnet": {
 		Label:    "Anthropic Claude 3.5 Sonnet",
 		Supports: &Multimodal,
-		Versions: []string{"claude-3-5-sonnet@20240620"},
-	},
-	"claude-3-sonnet": {
-		Label:    "Anthropic Claude 3 Sonnet",
-		Supports: &Multimodal,
-		Versions: []string{"claude-3-sonnet@20240229"},
+		Versions: []string{"claude-3-5-sonnet-20240620"},
 	},
 	"claude-3-haiku": {
 		Label:    "Anthropic Claude 3 Haiku",
 		Supports: &Multimodal,
-		Versions: []string{"claude-3-haiku@20240307"},
+		Versions: []string{"claude-3-haiku-20240307"},
+	},
+	"claude-3-5-haiku": {
+		Label:    "Anthropic Claude 3.5 Haiku",
+		Supports: &Multimodal,
+		Versions: []string{"claude-3-5-haiku-latest"},
 	},
 	"claude-3-opus": {
 		Label:    "Anthropic Claude 3 Opus",
@@ -60,12 +60,12 @@ var anthropicModels = map[string]ai.ModelInfo{
 	"claude-3-7-sonnet": {
 		Label:    "Anthropic Claude 3.7 Sonnet",
 		Supports: &Multimodal,
-		Versions: []string{"claude-3-7-sonnet@20250219"},
+		Versions: []string{"claude-3-7-sonnet-latest"},
 	},
 	"claude-opus-4": {
 		Label:    "Anthropic Claude Opus 4",
 		Supports: &Multimodal,
-		Versions: []string{"claude-opus-4@20250514"},
+		Versions: []string{"claude-opus-4-20250514"},
 	},
 	"claude-sonnet-4": {
 		Label:    "Anthropic Claude Sonnet 4",
