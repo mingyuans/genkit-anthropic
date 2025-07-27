@@ -421,6 +421,14 @@ func anthropicToGenkitResponse(m *anthropic.Message) (*ai.ModelResponse, error) 
 		default:
 			return nil, fmt.Errorf("unknown part: %#v", part)
 		}
+
+		//If the part is a tool use, we need to handle it differently; DON'T add it to the message content
+		//Because GenKit will validate the content
+		if m.StopReason == anthropic.StopReasonToolUse && p.Kind == ai.PartText {
+			r.FinishMessage = p.Text
+			continue
+		}
+
 		msg.Content = append(msg.Content, p)
 	}
 
