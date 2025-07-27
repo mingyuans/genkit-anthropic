@@ -400,7 +400,7 @@ func anthropicToGenkitResponse(m *anthropic.Message) (*ai.ModelResponse, error) 
 	case anthropic.StopReasonEndTurn:
 		r.FinishReason = ai.FinishReasonStop
 	case anthropic.StopReasonToolUse:
-		r.FinishReason = ai.FinishReasonStop
+		r.FinishReason = ai.FinishReasonInterrupted
 	default:
 		r.FinishReason = ai.FinishReasonUnknown
 	}
